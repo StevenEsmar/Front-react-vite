@@ -1,0 +1,38 @@
+button {
+    border-radius: 8px;
+    border: none;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(180deg, #85055f 0%, #d82525 49%, #10b810 50%, #000000c1 100%);
+    background-size: 1px 100px;
+    transition: all .3s;
+    cursor: pointer;
+    margin-bottom: 15px;
+
+    &:hover {
+        /* background: linear-gradient(#090125, #8f282f); */
+        background-position: 0 -50px;
+        transition: all .3s;
+    }
+
+}
+.btn_disabled{
+    background: #213547;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+
+    a:hover {
+        color: #747bff;
+    }
+
+    button {
+        background-color: #f9f9f9;
+    }
+}

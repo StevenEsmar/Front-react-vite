@@ -1,0 +1,27 @@
+.header{
+    background-color: rgba(0, 0, 0, 0.607);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 20px);
+    display: flex;
+    padding: 10px;
+    & .header_title{
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
+        margin: auto;
+    }
+    @media (max-width: 600px) {
+        .header_title{
+            font-size: 25px;
+            margin-left: 15px;
+        }
+    }
+}
+.button_close{
+    position: absolute;
+    top: 8px;
+    right:8px;
+}
