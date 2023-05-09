@@ -45,7 +45,7 @@ const InsertDna = () => {
       setErrorInput(true)
     }else{
       setErrorInput(false)
-      await fetch('http://localhost:8080/mutant', {
+      await fetch(CONSTANTS.URL_API_EXPRESS + "mutant", {
           method: 'POST',
           mode: 'cors',
           'headers': {
